@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>FlowTow</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+    <header>
+        <div id="logo"></div>
+
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/map">Map</a></li>
+                <li><a href="/partners">Our Partners</a></li>
+            </ul>
+        </nav>
+
+        <form id="search-form" action='/search'>
+            <div class="form-input">
+                <label for="search-input">Search:</label>
+                <input id="search-input" name="search">
+            </div>
+            <button id="search-button">Go</button>
+        </form>
+    </header>
+
+    <div id="content">
+        <div id="heading">
+            <hgroup>
+                <h1>Welcome to FlowTow!</h1>
+                <h2>Most Popular Posts</h2>
+            </hgroup>
+
+            <div class="flowtow">
+                <ul id="most-popular-first">
+                    <li><img src="opera-house.jpg" alt="Opera House"></li>
+                    <li>User Nick: James Bean</li>
+                    <li>Post Date: 2021-02-14</li>
+                    <li>Category: Building </li>
+                    <li>No. of Likes: 1200</li>
+                    <button class="like-button">Like</button>
+                </ul>
+            </div>
+
+            <div class="flowtow">
+                <ul id="most-popular-second">
+                    <li><img src="sydney.jpg" alt="Sydney"></li>
+                    <li>User Nick: Mary Contrary</li>
+                    <li>Post Date: 2021-02-12</li>
+                    <li>Category: Bridge </li>
+                    <li>No. of Likes: 1100</li>
+                    <button class="like-button">Like</button>
+                </ul>
+            </div>
+
+            <div class="flowtow">
+                <ul id="most-popular-third">
+                    <li><img src="food.jpg" alt="Food"></li>
+                    <li>User Nick: Bob Bobalooba</li>
+                    <li>Post Date: 2021-02-11</li>
+                    <li>Category: Food </li>
+                    <li>No. of Likes: 1000</li>
+                    <button class="like-button">Like</button>
+                </ul>
+            </div>
+        </div>
+
+        <div id="whatis">
+            <h2>What is FlowTow?</h2>
+            <p>FlowTow is a new, exciting, photo sharing service like nothing you've seen before!</p>
+            <p>FlowTow will support logging in users, posting images, making comments and viewing images in various
+                ways.</p>
+        </div>
+
+        <div id="registration">
+            <h2>Sign Up!</h2>
+            <p>Sign up to become a FlowTow user.</p>
+
+            <form id="registration-form" action="/register" method="POST">
+                <div class="form-input">
+                    <label for="username-input">Username</label>
+                    <input type="text" name="username" id="username-input">
+                </div>
+
+                <div class="form-input">
+                    <label for="firstname-input">First Name</label>
+                    <input type="text" name="firstname" id="firstname-input">
+                </div>
+
+                <div class="form-input">
+                    <label for="lastname-input">Last Name</label>
+                    <input type="text" name="lastname" id="lastname-input">
+                </div>
+
+                <div class="form-submit">
+                    <input type="submit" value="Register">
+                </div>
+            </form>
+        </div>
+
+        <div id="recent-users">
+            <h2>Recent Active Users</h2>
+            <p>Click on a username to review each user's posts.</p>
+
+            <ul id="recent-user-list">
+                <li class="user"><a href="#">Bob Bobalooba</a></li>
+                <li class="user"><a href="#">Mary Contrary</a></li>
+                <li class="user"><a href="#">James Bean</a></li>
+                <li class="user"><a href="#">Jim Jimbulator</a></li>
+                <li class="user"><a href="#">Axle Mandible</a></li>
+                <li class="user"><a href="#">Baz Barfoo</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <div id="social">
+            <ul>
+                <li id="social-twitter"><a href="#">Twitter</a></li>
+                <li id="social-facebook"><a href="#">Facebook</a></li>
+                <li id="social-instagram"><a href="#">Instagram</a></li>
+            </ul>
+        </div>
+
+        <ul class="footer-tos">
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Cookies</a></li>
+        </ul>
+
+        <p id="copyright">All content and images subject to copyright &copy; COMP2110 FlowTow 2021.</p>
+    </footer>
+</body>
+
+</html>

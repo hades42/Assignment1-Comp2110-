@@ -1,0 +1,416 @@
+/* Name: Nguyen Van Nguyen
+   ID: 45515409 
+*/
+@import url("https://fonts.googleapis.com/css2?family=Lekton:wght@400;700&family=Poppins:wght@400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+/* Header styling  */
+header {
+  font-size: 1.8rem;
+  width: 100%;
+  height: 7rem;
+  background-color: #ffffff;
+  box-shadow: 1px 5px 8px -6px #54545493;
+  display: flex;
+  margin-bottom: 0.2rem;
+  align-items: center;
+}
+header nav {
+  width: 60%;
+  padding-left: 20rem;
+}
+header nav ul {
+  display: flex;
+  list-style: none;
+}
+header nav ul li {
+  margin-right: 5rem;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 500;
+  transition: color 0.1s linear;
+}
+header nav ul li:first-child a {
+  color: #ff4b33;
+}
+header nav ul li a:hover {
+  color: #ff4b33;
+}
+#search-form {
+  margin: 0 30rem 0 auto;
+  display: flex;
+  position: relative;
+}
+#search-input {
+  padding: 0.7rem 2rem;
+  border-radius: 5rem;
+  outline: none;
+  border: 1px solid black;
+  transition: all 250ms ease-in-out;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: 1.8rem 1.8rem;
+  background-position: 95% center;
+}
+#search-input:hover,
+#search-input:focus {
+  padding: 0.7rem 1rem;
+  outline: none;
+  border: 1px solid transparent;
+  border-radius: 0;
+  border-bottom: 1px solid rgb(87, 78, 78);
+  background-position: 100% center;
+}
+#search-button {
+  display: none;
+}
+#search-form label {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-right: 1rem;
+}
+
+#heading {
+  position: relative;
+  display: grid;
+  padding-bottom: 10rem;
+  /* margin-bottom: 10rem; */
+}
+#heading::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.05;
+  background-image: url(https://template.coomb.co/ponya/wp-content/uploads/sites/4/2020/08/pattern-2.png);
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+}
+#heading hgroup {
+  height: 50rem;
+  width: 100%;
+  position: relative;
+  font-size: 2.5rem;
+  grid-row: 1/2;
+  grid-column: 1/4;
+  margin-bottom: 5rem;
+}
+#heading hgroup::after {
+  content: " ";
+  position: absolute;
+  display: block;
+  width: 56rem;
+  height: 32rem;
+  background-image: url(https://template.coomb.co/ponya/wp-content/uploads/sites/4/2020/08/croods-3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 14rem;
+  right: 33rem;
+}
+#heading hgroup h1 {
+  font-weight: 800;
+  line-height: 1.2rem;
+  position: absolute;
+  top: 35.5rem;
+  left: 31.5rem;
+}
+#heading hgroup h1::before {
+  content: "Connect with your Friends";
+  font-family: "Lekton", sans-serif;
+  position: absolute;
+  font-size: 2.125rem;
+  font-weight: 600;
+  top: -5rem;
+  left: 0rem;
+}
+#heading hgroup h2 {
+  text-shadow: 2px 2px 0px #ff4b33;
+  -webkit-text-stroke-color: #ff4b33;
+  -webkit-text-fill-color: #ffffff;
+  -webkit-text-stroke-width: 1px;
+  position: absolute;
+  top: 39rem;
+  left: 31.5rem;
+}
+#heading div:nth-child(2) {
+  grid-row: 2/3;
+  grid-column: 1/2;
+  margin-top: 10rem;
+  margin-left: auto;
+  transition: all 0.2s linear;
+}
+#heading div:nth-child(2):hover,
+#heading div:nth-child(3):hover,
+#heading div:nth-child(4):hover {
+  margin-top: 8.5rem;
+}
+#heading div:nth-child(3) {
+  grid-row: 2/3;
+  grid-column: 2/3;
+  margin: 10rem auto 0 auto;
+  transition: all 0.2s linear;
+}
+#heading div:nth-child(4) {
+  grid-row: 2/3;
+  grid-column: 3/4;
+  margin-top: 10rem;
+  margin-right: auto;
+  transition: all 0.2s linear;
+}
+
+#most-popular-first,
+#most-popular-second,
+#most-popular-third {
+  position: relative;
+  max-width: 40rem;
+  height: 45rem;
+  list-style: none;
+  background-color: white;
+  padding: 3rem 4rem;
+  box-shadow: 1px 1px 10px 1px rgb(0 0 0 / 10%);
+  transition: 0.3s ease-in-out;
+  border-radius: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+#most-popular-first li:nth-child(1),
+#most-popular-second li:nth-child(1),
+#most-popular-third li:nth-child(1) {
+  position: relative;
+  top: -10rem;
+}
+#most-popular-first img,
+#most-popular-second img,
+#most-popular-third img {
+  width: 100%;
+  height: 22.8rem;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#most-popular-first li:nth-child(2),
+#most-popular-second li:nth-child(2),
+#most-popular-third li:nth-child(2) {
+  margin-top: -6rem;
+}
+#most-popular-first > li,
+#most-popular-second > li,
+#most-popular-third > li {
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+}
+
+#most-popular-first button,
+#most-popular-second button,
+#most-popular-third button {
+  margin-top: 2rem;
+  padding: 1rem 3.5rem;
+  border: 0.16rem solid rgba(255, 255, 255, 0);
+  border-radius: 2rem;
+  text-align: center;
+  transition: all 0.2s;
+  font-size: 1.5rem;
+  background-color: #f14e4e;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  outline: none;
+}
+#most-popular-first button:hover,
+#most-popular-second button:hover,
+#most-popular-third button:hover {
+  border-color: #f14e4e;
+  background-color: white;
+  color: black;
+}
+
+/* Whatis section */
+#whatis {
+  padding: 12.8rem 0;
+  background-color: transparent;
+  background-image: linear-gradient(180deg, #ff4b33 0%, #f2295b 100%);
+  text-align: center;
+  font-size: 2.5rem;
+  color: whitesmoke;
+}
+
+#registration {
+  padding: 10rem 0;
+  width: 100%;
+  position: relative;
+}
+#registration h2 {
+  font-size: 4rem;
+  text-align: center;
+}
+#registration p {
+  text-align: center;
+  font-size: 1.5rem;
+}
+#registration::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.05;
+  background-image: url(https://template.coomb.co/ponya/wp-content/uploads/sites/4/2020/08/pattern-2.png);
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+}
+#registration-form {
+  width: 60rem;
+  margin: 3rem auto 0 auto;
+}
+#registration-form .form-input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  transition: 0.3s;
+}
+#registration-form .form-input label {
+  font-size: 1.5rem;
+}
+#registration-form .form-input input {
+  background-color: #eee;
+  border: none;
+  padding: 12px 15px;
+  margin: 8px 0;
+  width: 100%;
+}
+#registration-form .form-submit input {
+  display: block;
+  margin: 0 auto;
+  border-radius: 20px;
+  border: 1px solid #ff4b2b;
+  background-color: #ff4b2b;
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 1.5rem 4.5rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+#recent-users {
+  width: 100%;
+  height: 60rem;
+  padding: 0rem 0;
+  position: relative;
+}
+#recent-users h2 {
+  text-align: center;
+  text-shadow: 2px 2px 0px #ff4b33;
+  -webkit-text-stroke-color: #ff4b33;
+  -webkit-text-fill-color: #ffffff;
+  -webkit-text-stroke-width: 1px;
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+#recent-users p {
+  text-align: center;
+  font-size: 3rem;
+  font-family: "Lekton", sans-serif;
+  font-weight: 600;
+}
+#recent-user-list {
+  position: absolute;
+  top: 18.6rem;
+  left: 55rem;
+  list-style: none;
+}
+#recent-user-list li a {
+  text-decoration: none;
+  font-size: 3rem;
+  color: black;
+  font-family: "Lekton", sans-serif;
+  display: inline-block;
+  margin-bottom: 1.9rem;
+  transition: all 0.1s linear;
+}
+#recent-user-list li a:hover {
+  color: #f14e4e;
+}
+
+#recent-users::after {
+  content: " ";
+  position: absolute;
+  display: block;
+  width: 54rem;
+  height: 34rem;
+  background-image: url(https://template.coomb.co/ponya/wp-content/uploads/sites/4/2020/08/croods-1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 14rem;
+  right: 33rem;
+}
+footer {
+  background-color: #2b2b2d;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  display: grid;
+  /* padding: 2rem 0; */
+}
+#social {
+  grid-row: 1/2;
+  grid-column: 1/2;
+  margin-left: 10rem;
+}
+.footer-tos {
+  grid-row: 1/2;
+  grid-column: 2/3;
+  margin-right: 10rem;
+}
+#copyright {
+  grid-row: 2/3;
+  grid-column: 1/3;
+  text-align: center;
+  font-size: 1.5rem;
+  color: white;
+  background-color: #222224;
+  padding: 1rem 0;
+}
+footer #social ul li a,
+footer .footer-tos li a {
+  text-decoration: none;
+  color: white;
+  transition: all .1s linear;
+}
+footer #social ul li a:hover,
+footer .footer-tos li a:hover {
+color: #ff4b2b
+}
+footer #social ul,
+footer .footer-tos {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 2rem;
+  padding: 2rem 0;
+}
